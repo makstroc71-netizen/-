@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>AutoParts — Запчастини онлайн</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <h1>AutoParts</h1>
+    <div class="search-cart">
+      <input id="search" placeholder="Пошук за назвою або маркою">
+      <select id="brand-filter"><option value="">Всі марки</option></select>
+      <button id="view-cart">Кошик (<span id="cart-count">0</span>)</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h2>Швидка доставка. Оригінальні та підходящі запчастини.</h2>
+      <p>Виберіть вашу марку або знайдіть деталь по назві.</p>
+    </section>
+
+    <section id="catalog" class="catalog"></section>
+  </main>
+
+  <aside id="cart-panel" class="cart-panel hidden">
+    <h3>Кошик</h3>
+    <div id="cart-items"></div>
+    <div class="cart-summary">
+      <div>Разом: <strong id="cart-total">0 грн</strong></div>
+      <button id="close-cart">Закрити</button>
+    </div>
+  </aside>
+
+  <footer class="site-footer">
+    <p>AutoParts — демо сайт. Немає реальної оплати.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
